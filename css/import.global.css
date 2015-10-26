@@ -1,0 +1,18 @@
+﻿.g_loading{background-image: url(images/loading.gif);background-size: 37px 10px;background-position: 50% 50%;background-repeat: no-repeat;}
+.g_loading .content{visibility: hidden;}/*loading方案,content为loading内容区*/
+.g_txtloading{text-align: center;color:#43BFF5;position: relative;margin-top: 10px;}
+.g_holder{min-height: 200px;}/*占位样式*/
+.g_word{margin: 20px auto;text-align: center;}
+.g_disabled{color: #A6A6A6!important}
+.g_clipline{overflow: hidden;word-break: normal;white-space: nowrap;text-overflow: ellipsis;}
+.g_cliplines{display: -webkit-box!important;overflow: hidden;text-overflow: ellipsis;-webkit-box-orient: vertical;}
+.g_line2{-webkit-line-clamp: 2;}
+.g_line3{-webkit-line-clamp: 3;}
+.g_feedback{background-color: rgba(0,0,0,0.1)!important;border-radius: 4px!important;}
+.g_disabled.g_feedback{background-color: inherit!important;}
+.g_hide{display: none!important;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.hairline1{}

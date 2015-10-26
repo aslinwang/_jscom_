@@ -1,0 +1,1 @@
+define('tmpl/Guide','<%var img;if(theme==THEMES.RED){  img = \'\';}else{  img = \'http://mat1.gtimg.com/auto/images/mobi/appguide.jpg\';}%><section class="guidewrap"><div class="content"><img src="<%=theme%>"><dl><dt><%=word1%></dt><dd><%=word2%></dd></dl></div><a href="<%=url%>" class="btn" boss="<%=boss%>"><span><%=btnTit%></span></a></section>');

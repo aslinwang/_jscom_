@@ -1,0 +1,1 @@
+define('tmpl/Select_List','<%for(var i=0; i<list.length;i++){%><li><%=list[i]%></li><%}%>');

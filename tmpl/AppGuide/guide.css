@@ -1,0 +1,37 @@
+﻿.guidewrap{
+  font-size: 16px;
+  position: relative;
+  margin: 10px;
+}
+.guidewrap .content{
+  position: relative;
+  height: 100%;
+}
+.guidewrap img{
+  width: 100%;
+}
+.guidewrap dl{
+  position: absolute;
+  line-height: 24px;
+  color: #FFF;
+  top: 20%;
+  left: 35%;
+  font-size: 14px;
+}
+.guidewrap dd{
+  font-size: 14px;
+  margin-left: 2px;
+  font-size: 12px;
+}
+.guidewrap .btn{
+  position: absolute;
+  top: 45%;
+  height: 25px;
+  line-height: 25px;
+  background: #ff9228;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 0 5px;
+  right: 4%;
+}

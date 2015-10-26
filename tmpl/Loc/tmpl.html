@@ -1,0 +1,105 @@
+﻿<!--
+@name Tips 模版
+@stylesheets 
+@vars
+cur : 当前城市
+list : 城市列表数组
+-->
+<section class="m-loc">
+  <header class="locHd">
+    <div>
+      <a class="back" href="#"><i></i></a>
+      <span class="f18">切换城市</span>
+    </div>
+  </header>
+  <section class="cur">当前城市：<span class="value"></span></section>
+
+  <%if(list.HOT){%>
+  <section class="list">
+    <div class="tit">热门城市</div>
+    <ul class="wrap">
+    <%
+    var group1 = 3;
+    for(var i=0; i<Math.ceil(list.HOT.length/group1);i++){%>
+      <li>
+        <ul class="group">
+          <%for(var j=0; j<group1;j++){
+            var idx = group1*i+j;
+            var item = list.HOT[idx];
+            var style = '';
+            if(idx >= list.HOT.length){
+              item = {'cityid':-1, 'cityname':''};
+              style = 'border-right:none;';
+            }
+          %>
+            <li class="item" data-id="<%=item.cityid%>" style="<%=style%>"><%=item.cityname%></li>
+          <%}%>
+        </ul>
+      </li>
+    <%}%>
+    </ul>
+  </section>
+  <%
+    delete list.HOT;
+  }%>
+
+  <section class="list">
+    <div class="tit">其他城市</div>
+    <ul class="wrap">
+
+    <%
+    var citys = [];
+    for(var key in list){
+      citys.push(key);
+    }%>
+
+    <%
+    var group2 = 5;
+    for(var i=0; i<Math.ceil(citys.length/group2);i++){%>
+      <li>
+        <ul class="group">
+          <%for(var j=0; j<group2;j++){
+            var idx = group2*i+j;
+            var item = ['<a class="goto" href="#link_', citys[idx] , '">', citys[idx], '</a>'].join('');
+            var style = '';
+            if(idx >= citys.length){
+              item = '';
+              style = 'border-right:none;';
+            }
+          %>
+            <li class="item" style="<%=style%>"><%=item%></li>
+          <%}%>
+        </ul>
+      </li>
+    <%}%>
+    </ul>
+  </section>
+
+  <%for(var key in list){%>
+  <section class="list" id="link_<%=key%>">
+    <div class="tit"><%=key%></div>
+    <ul class="wrap">
+      <%
+      var group3 = 3;
+      for(var i=0; i<Math.ceil(list[key].length/group3);i++){%>
+        <li>
+          <ul class="group">
+            <%for(var j=0; j<group3;j++){
+              var idx = group3*i+j;
+              var item = list[key][idx];
+              var style = '';
+              if(idx >= list[key].length){
+                item = {'cityid':-1, 'cityname':''};
+                style = 'border-right:none;';
+              }
+            %>
+              <li class="item" data-id="<%=item.cityid%>" style="<%=style%>"><%=item.cityname%></li>
+            <%}%>
+          </ul>
+        </li>
+      <%}%>
+    </ul>
+  </section>
+  <%}%>
+
+</section>

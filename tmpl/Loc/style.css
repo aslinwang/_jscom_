@@ -1,0 +1,83 @@
+.m-loc{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: #F2F2F2;
+  width: 100%;
+  z-index: 3000;
+  overflow: auto;
+}
+.m-loc .locHd{
+  background-color: #2BA7DD;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  position: relative;
+  color: #fff;
+}
+.m-loc .locHd .back{
+  display: inline-block;
+  width: 40px;
+  height: 44px;
+  position: absolute;
+  left: 0;
+}
+.m-loc .locHd .back i{
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  border-left: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  display: inline-block;
+  top: 4px;
+  position: relative;
+}
+.m-loc .cur{
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  padding-left: 10px;
+  height: 40px;
+  line-height: 40px;
+  color: #333333;
+  font-size: 14px;
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
+}
+.m-loc .cur .value{
+  color: #14a1de;
+  font-size: 16px;
+}
+.m-loc .list{
+  padding-top: 20px;
+}
+.m-loc .list .tit{
+  color: #333333;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.m-loc .list .wrap{
+  border-top: solid 1px #e6e6e6;
+}
+.m-loc .list .group{
+  background-color: #FFFFFF;
+  width: 100%;
+  display: table;
+}
+.m-loc .list ul .item{
+  width: 20%;
+  height: 40px;
+  line-height: 40px;
+  display: table-cell;
+  text-align: center;
+  border-right: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
+}
+.m-loc .list ul .item .goto{
+  display: inline-block;
+  width: 100%;
+}

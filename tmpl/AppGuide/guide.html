@@ -1,0 +1,29 @@
+﻿<!--
+@name App下载引导
+@stylesheets 
+@vars
+url : 跳转链接
+word1 : 上部引导文案
+word2 : 下部引导文案
+btnTit : 按钮文案
+boss : 点击按钮的boss统计
+-->
+<%
+var img;
+if(theme==THEMES.RED){
+  img = 'http://mat1.gtimg.com/auto/images/mobi/appguide_red.jpg';
+}
+else{
+  img = 'http://mat1.gtimg.com/auto/images/mobi/appguide.jpg';
+}
+%>
+<section class="guidewrap">
+  <div class="content">
+    <img src="<%=img%>">
+    <dl>
+      <dt><%=word1%></dt>
+      <dd><%=word2%></dd>
+    </dl>
+  </div>
+  <a href="<%=url%>" class="btn" boss="<%=boss%>"><span><%=btnTit%></span></a>
+</section>

@@ -1,0 +1,109 @@
+.m-bg{
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.m-select{
+  width: 100%;
+  position: fixed;
+  background-color: #FFF;
+  bottom: 0;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideUp;
+  animation-name: slideUp;
+}
+.m-select .header{
+  position: static;
+  line-height: 44px;
+  height: 44px;
+  border: solid 1px #d9d9d9;
+  width: 100%;
+  background-color: #F3F3F7;
+  z-index: 100;
+}
+.m-select .header .tit{
+  margin-left: 15px;
+}
+.m-select .header .btn{
+  position: absolute;
+  right: 15px;
+  color: #40bdf7;
+}
+.m-select .list{
+  color: #000000;
+  text-align: center;
+  overflow: hidden;
+  max-height: 252px;
+  position: relative;
+}
+.m-select .list ul{
+  transform: translateY(0%);
+}
+.m-select .list li{
+  height: 36px;
+  line-height: 36px;
+}
+.m-select .mask{
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  background-color: #fff;
+}
+.m-select .mask.mask1{
+  top: 0;
+  opacity: 0.8;
+}
+.m-select .mask.mask2{
+  top: 36px;
+  opacity: 0.5;
+}
+.m-select .mask.mask3{
+  top: 72px;
+  opacity: 0.3;
+}
+.m-select .mask.mask4{
+  top: 108px;
+  background: none;
+  border: solid 1px #cdcdcd;
+}
+.m-select .mask.mask5{
+  top: 144px;
+  opacity: 0.3;
+}
+.m-select .mask.mask6{
+  top: 180px;
+  opacity: 0.5;
+}
+.m-select .mask.mask7{
+  top: 216px;
+  opacity: 0.8;
+}
+
+/*animations*/
+@-webkit-keyframes slideUp{
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp{
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
