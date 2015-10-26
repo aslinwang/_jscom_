@@ -14,4 +14,5 @@
 注意
 ----
 此项目依赖[increjs](http://github.com/aslinwang/increjs)，[x.js+zepto.js+seajs+...](https://github.com/aslinwang/_jslib_)
+
 如果对某些组件有优化和修改建议，烦请Pull Request或者提交Issues
